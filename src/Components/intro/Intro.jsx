@@ -12,8 +12,7 @@ import {
   import {FacebookIcon,WhatsappIcon,FacebookMessengerIcon} from "react-share";
 import { useEffect, useState } from "react";
 const Intro = ({setIntroView,setUserName})=>{
-    const happyUserImg="https://freepngimg.com/thumb/happy/31922-4-happy-transparent.png";
-    const share="www.google.com"
+    const share="https://github.com/waseem-mehr/personaly.github.io"
     const [name,setName]=useState("")
     const [error,setError]=useState(false)
     useEffect(()=>{},[error])
