@@ -1,0 +1,44 @@
+
+.nav__logo{
+    height: 43px;
+    width: 43px;
+    margin-top: -13px;
+}
+
+.custom-navbar{
+    position: static;
+    padding-top: 30px;
+    top: 20;
+}
+.navbar{
+    min-height: 80px;
+    border-radius: 10px;
+
+}
+.navbar__title{
+  
+  font-family: urdu-nori;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 6px;
+  margin-top: 15px;
+}
+.nav-item-text{
+    text-decoration: none;
+    font-family: urdu-nori;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right!important;
+}
+.nav-item-text:hover{
+    color: #E8424E!important;
+}
+.active{
+    color: #E8424E!important;
+}
+.nav-item:active{
+    color: #E8424E!important;
+}

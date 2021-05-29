@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import Main from "../src/Components/main/Main"
+import { useEffect, useState } from 'react';
+import Splash from '../src/Components/splash/Splash'
+
 import './App.css';
 
 function App() {
+  const [splash,setSplash]=useState(true)
+  //useEffect us waqt call hota ha jab phli bar render hota document
+  //usky ilawa ham is pr argument dy sakty k yeah kis waqt call ho
+  //for example ik state k change hony pr call ho wagera wagera
+  useEffect(()=>{
+    hideSplash()
+  },[])
+
+  const hideSplash=()=>{
+    setTimeout(()=>{
+      setSplash(false)
+    },3000)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div>
+
+      {
+        splash?<Splash/>:<Main/>
+      }
+         
     </div>
+    
   );
 }
 

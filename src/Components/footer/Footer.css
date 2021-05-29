@@ -1,0 +1,11 @@
+.footer__container{
+    position: static;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+.rights_text{
+    color: white;
+    text-align: center!important;
+    grid-area: footer;
+}
