@@ -12,7 +12,7 @@ import {
   import {FacebookIcon,WhatsappIcon,FacebookMessengerIcon} from "react-share";
 import { useEffect, useState } from "react";
 const Intro = ({setIntroView,setUserName})=>{
-    const share="https://github.com/waseem-mehr/personaly.github.io"
+    const share="https://personaly-quiz.herokuapp.com/"
     const [name,setName]=useState("")
     const [error,setError]=useState(false)
     useEffect(()=>{},[error])
